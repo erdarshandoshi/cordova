@@ -10,13 +10,8 @@
   $(function() {
 
   $("#ext-link").click(function() {
-    if (typeof navigator !== "undefined" && navigator.app) {
-        // Mobile device.
-        navigator.app.loadUrl('https://elanco-vetassistderma-dev.herokuapp.com/', {openExternal: true});
-    } else {
-        // Possible web browser
-        window.open("https://elanco-vetassistderma-dev.herokuapp.com/", "_blank");
-    }
+  navigator.app.loadUrl("https://elanco-vetassistderma-dev.herokuapp.com");
+    
 });
 });
   document.addEventListener("deviceready", onDeviceReady, false);
